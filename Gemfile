@@ -48,6 +48,21 @@ gem 'kaminari'
 
 gem 'activeadmin'
 
+
+gem 'grape'
+gem 'grape-knock'
+gem 'jwt'
+
+gem 'twilio-ruby'
+gem 'phonelib'
+
+gem 'rest-client'
+
+
+gem 'sidekiq'
+gem 'redis'
+gem 'redis-namespace'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

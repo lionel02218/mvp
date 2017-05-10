@@ -32,6 +32,16 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
 
       t.timestamps null: false
+
+      t.string :first_name, default: ""
+      t.string :last_name, default: ""
+      t.string :profession, default: ""
+      t.string :avatar, default: ""
+      t.string :website, default: ""
+      t.string :colour_scheme, default: ""
+      t.string :country
+      t.string :city
+      t.string :phone_number
     end
 
     add_index :users, :email,                unique: true

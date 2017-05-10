@@ -1,0 +1,28 @@
+%section#contact.content-section.text-center
+  .container
+    %h2 Contact Us
+    %p Feel free to shout us by feeling the contact form or visiting our social network sites like Fackebook,Whatsapp,Twitter.
+    .row
+      .col-md-8.col-md-offset-2
+        %form.form-horizontal
+          .form-group
+            %label{:for => "exampleInputName2"} Name
+            %input#exampleInputName2.form-control{:placeholder => "Jane Doe", :type => "text"}/
+          .form-group
+            %label{:for => "exampleInputEmail2"} Email
+            %input#exampleInputEmail2.form-control{:placeholder => "jane.doe@example.com", :type => "email"}/
+          .form-group
+            %label{:for => "exampleInputText"} Your Message
+            %textarea.form-control{:placeholder => "Description"}
+          %button.btn.btn-default{:type => "submit"} Send Message
+        %hr/
+
+
+:scss
+  .content-section{
+    .form-horizontal .form-group{
+      margin-right:0px;
+      margin-left: 0px;
+    }
+
+  }
